@@ -1,5 +1,9 @@
+import { UncontrolledForm } from './UncontrolledForm';
+
 function App() {
-  return <div>app</div>;
+	return (
+		<UncontrolledForm />
+	);
 }
 
 export default App;
