@@ -1,7 +1,7 @@
-import { useCurrentUser } from "./useCurrentUser";
+import { useResource } from './useResource';
 
-export const UserInfo = () => {
-	const user = useCurrentUser();
+export const UserInfo = ({ userId }) => {
+	const user = useResource(`/users/${userId}`);
 
 	const { name, age, hairColor, hobbies } = user || {};
 
