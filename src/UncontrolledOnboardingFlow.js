@@ -29,5 +29,5 @@ export const UncontrolledOnboardingFlow = ({ children, onFinish }) => {
 		return React.cloneElement(currentChild, { goToNext });
 	}
 
-	return currentChild;
+	// return currentChild;
 }

@@ -1,8 +1,8 @@
 import { UncontrolledOnboardingFlow } from "./UncontrolledOnboardingFlow";
 
-const StepOne = ({ goToNext }) => (
+const StepOne = ({ goToNext, me }) => (
   <>
-    <h1>Step 1</h1>
+    <h1>Step 1 {me}</h1>
     <button onClick={() => goToNext({ name: "John Doe" })}>Next</button>
   </>
 );
@@ -22,6 +22,7 @@ const StepThree = ({ goToNext }) => (
 function App() {
   return (
     <UncontrolledOnboardingFlow
+
       onFinish={(data) => {
         console.log(data);
         alert("Onboarding complete!");
@@ -30,6 +31,7 @@ function App() {
       <StepOne />
       <StepTwo />
       <StepThree />
+      yff
     </UncontrolledOnboardingFlow>
   );
 }
