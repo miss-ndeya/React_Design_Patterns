@@ -1,5 +1,9 @@
+import { UserInfo } from './UserInfo';
+
 function App() {
-  return <div>app</div>;
+	return (
+		<UserInfo />
+	);
 }
 
 export default App;
